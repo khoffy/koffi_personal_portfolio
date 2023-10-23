@@ -1,0 +1,15 @@
+.non-scrollable {
+    /* Styles for the non-scrollable div */
+    width: 100%; /* Set the width to fill the viewport */
+    height: auto; 
+    /* Ensure that content does not exceed the specified height */
+}
+
+.scrollable {
+    /* Styles for the scrollable div */
+    width: 100%; /* Set the width to fill the viewport */
+    height: calc(100vh - 50px); /* Calculate the height to fill the remaining viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+    /* background-color: #ffffff; Set background color or other styles */
+    /* Content inside this div can scroll if it exceeds the calculated height */
+}
