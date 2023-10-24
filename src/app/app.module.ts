@@ -13,6 +13,9 @@ import { DoItYourselfComponent } from './do-it-yourself/do-it-yourself.component
 import { ResumeComponent } from './resume/resume.component';
 import { RouterModule } from '@angular/router';
 import { SocialMediaLinksComponent } from './social-media-links/social-media-links.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { Contact } from './contact/contact.model';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { SocialMediaLinksComponent } from './social-media-links/social-media-lin
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: "home", component: HomeComponent},
       {path: "about-me", component: AboutMeComponent},
@@ -43,7 +48,7 @@ import { SocialMediaLinksComponent } from './social-media-links/social-media-lin
       {path: "**", redirectTo: "/home"}
     ])
   ],
-  providers: [],
+  providers: [Contact],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
