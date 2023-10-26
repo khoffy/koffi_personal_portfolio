@@ -21,12 +21,12 @@ export class ContactComponent {
       this.submitted = true;
       if(form.valid) {
         console.log(this.contact);
-        this.restService.saveMessage(this.contact).subscribe(contact => {
+        this.restService.saveMessage(this.contact).subscribe(
+          (response) => {
             this.contact.clear();
             this.submitted = false;
-        })
+        });
       }
-
     }
   }
 
