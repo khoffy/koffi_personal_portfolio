@@ -1,1 +1,43 @@
-<p>blog works!</p>
+<div style="color: white;">
+
+    <h2>Spring Boot 3 AWS LAMBDA Serverless Architecture</h2>
+
+    <p>
+        Generate the project with Maven Archetype: aws-serverless-springboot3-archetype
+    </p>
+    <ul>
+        <li>
+            Java version: 17
+        </li>
+        <li>
+            Springboot version: 2.0.0.M1
+        </li>
+    </ul>
+
+    <p>Adding some necessary dependencies for the project</p>
+    <ul>
+        <li>Spring-boot-starter-data-jpai</li>
+        <li>Lombook</li>
+        <li>H2 database</li>
+    </ul>
+
+    <p>Generating the .zip file to deploy as a serverless application with "mvn clean package" cmd</p>
+
+    <h5>Deployment on AWS as a LAMBDA FUNCTION></h5>
+    On AWS console > Lambda function
+
+    <ul>
+        <li>Create a Lambda function</li>
+        <li>Upload the archive through "Upload from" button</li>
+        <li>Then, click on "Save"</li>
+        <li>Then, "Edit" Runtime Settings and the full name of the lambda handler</li>
+    </ul>
+
+    <h5>Expose the LAMBDA FUNCTION via an API GATEWAY</h5>
+    On AWS Console > API GATEWAY
+    <ul>
+        <li>Create an API REST Gateway</li>
+        <li>Create a Resource</li>
+        <li>Then, deploy the lambda function</li>
+    </ul>
+</div>

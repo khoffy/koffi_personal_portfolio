@@ -45,7 +45,7 @@ import { Contact } from './contact/contact.model';
       {path: "testimonials", component: TestimonialsComponent},
       {path: "social-media-links", component: SocialMediaLinksComponent},
       {path: "do-it-yourself", component: DoItYourselfComponent},
-      {path: "**", redirectTo: "/home"}
+      {path: "**", redirectTo: "/resume"}
     ])
   ],
   providers: [Contact],
